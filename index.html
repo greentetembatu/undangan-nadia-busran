@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan Nadia & Busran</title>
+
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="undangan pernikahan nadia & busran">
+    <meta property="og:description" content="Nadia & Busran dengan bahagia mengundang Anda untuk merayakan pernikahan kami. Kendari, Senin, 4 Agustus 2025.">
+    <meta property="og:url" content="https://greentetembatu.github.io/undangan-pernikahan-nadia-busran/">
+    <meta property="og:site_name" content="undangan pernikahan nadia & busran">
+    <meta property="og:updated_time" content="2027-01-11T23:51:00+07:00">
+    <meta property="og:image" content="https://greentetembatu.github.io/undangan-pernikahan-nadia-busran/foto1.jpg">
+    <meta property="og:image:secure_url" content="https://greentetembatu.github.io/undangan-pernikahan-nadia-busran/foto1.jpg">
+    <meta property="og:image:width" content="900">
+    <meta property="og:image:height" content="600">
+    <meta property="og:image:alt" content="Foto Pasangan Pengantin">
+    <meta property="og:image:type" content="image/jpg">    
+
+
+
+        
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.2.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Oleo+Script:wght@400;700&family=Pacifico&family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&family=Dancing+Script:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+</head>
+<body>
+
+  <div class="overlay" id="landingOverlay">
+        <div class="overlay-content">
+            <h1>Undangan Pernikahan</h1>
+            <h2>Nadia & Busran</h2>
+            <div id="countdown" class="countdown"></div>
+            <p class="date">Senin, 4 Agustus 2025 </p>
+            <img src="foto-pasangan-pengantin.jpg" alt="Foto Pasangan Pengantin" class="foto-depan">
+            <p class="to-text">Kepada Yth:</p>
+            <h3 id="guest-name-display">Tamu Undangan</h3>
+
+            <button id="openWebsiteBtn" class="openWebsiteBtn">Buka Undangan</button>
+
+            <audio id="background-music" loop>
+                <source src='audio/Lagu Pernikahan Kita.mp3' type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+
+    <canvas id="fallingCanvas"></canvas>
+
+    <button id="confettiButton" aria-label="Celebrate">
+        <i class="fi fi-tr-party-horn"></i>
+    </button>
+        <button id="backgroundmusic" aria-label="Nyalakan Musik">
+        <i class="fas fa-play"></i> 
+    </button>
+
+    
+    <main id="mainContent" class="main-content">
+        <div class="main-wrapper">
+            <section id="sectionOpening" class="main-section fade-in-up">
+                <p class="arabic-text">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيْمِ</p>
+                <p class="greeting-text">Assalamu'alaikum Warahmatullahi Wabarakatuh</p>
+                <p>Dengan mengucap syukur dan memohon Ridho serta Rahmat Allah SWT, kami bermaksud menyelenggarakan acara Akad dan Resepsi pernikahan putra-putri kami:</p>
+            </section>
+
+            <section id="sectionBridesGroom" class="main-section fade-in-up">
+                <h2 class="section-title">Nadia Tri Wulandari, S.Pd., M.Pd</h2>
+                <p class="parents">Putri Dari Bapak Arnol (alm) & Ibu Wa Faria</p>
+                <p class="ampersand">&</p>
+                <h2 class="section-title">Busran, S.Pd</h2>
+                <p class="parents">Putra Dari Bapak Buraera & Ibu Hasna</p>
+                <div class="brides-groom-photos">
+                    <div id="bridePhoto" class="photo-card">
+                        <img src="assets/nadia-sendiri.jpg" alt="Foto Pengantin Wanita">
+                        <p>Nadia</p>
+                    </div>
+                    <div id="groomPhoto" class="photo-card">
+                        <img src="assets/basran-sendiri.jpg" alt="Foto Pengantin Pria">
+                        <p>Busran</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sectionEvents" class="main-section fade-in-up">
+                <h2 class="section-title">Yang Insya Allah akan dilaksanakan pada:</h2>
+                <div class="event-details-wrapper">
+                    <div class="event-detail fade-in-up">
+                        <h3>Akad Nikah</h3>
+                        <p><i class="far fa-calendar-alt"></i> Senin, 4 Agustus 2025 (10 Safar 1447)</p>
+                        <p><i class="far fa-clock"></i> Pukul: 09.00 WTA</p>
+                    </div>
+                    <div class="event-detail fade-in-up">
+                        <h3>Resepsi</h3>
+                        <p><i class="far fa-calendar-alt"></i>Senin, 4 Agustus 2025 (10 Safar 1447)</p>
+                        <p><i class="far fa-clock"></i> Pukul: 12.00 WITA - Selesai</p>
+                    </div>
+                </div>
+
+                <div class="event-location fade-in-up">
+                    <p>Bertempat di:</p>
+                    <h3>Kediaman Kami : </h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Terong, Kel. Mokoau, Kec. Kambu, Kota Kendari - BTN Puri Tawang Alun II</p>
+                    <a href="https://maps.app.goo.gl/hHtk2wHLhoKryk3y9" target="_blank" class="map-link"><i class="fas fa-directions"></i> Buka Peta</a>
+                </div>
+            </section>
+
+            <section id="sectionGallery" class="main-section gallery-section">
+                <h2 class="section-title">Galeri Foto</h2>
+                <div class="parallax-gallery-wrapper">
+                    <div class="parallax-item" data-parallax-speed="-0.3">
+                        <img src="assets/foto1.jpg" alt="Cat Lover 1">
+                    </div>
+                    <div class="parallax-item" data-parallax-speed="0.4">
+                        <img src="assets/foto2.jpg" alt="Cat Lover 2">
+                    </div>
+                    <div class="parallax-item" data-parallax-speed="-0.5">
+                        <img src="assets/foto3.jpg" alt="Cat Lover 3">
+                    </div>
+                    <div class="parallax-item" data-parallax-speed="0.6">
+                        <img src="assets/foto4.jpg" alt="Cat Lover 4">
+                    </div>
+                    <div class="parallax-item" data-parallax-speed="-0.2">
+                        <img src="assets/IMG_6769.jpg" alt="Cat Lover 5">
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="sectionRsvp" class="main-section fade-in-up">
+                <h2 class="section-title">Konfirmasi Kehadiran</h2>
+                <p>Mohon informasikan kehadiran Anda agar kami dapat mempersiapkan acara dengan baik.</p>
+                <form id="rsvpForm" class="rsvp-form">
+                    <label for="rsvpName">Nama Lengkap:</label>
+                    <input type="text" id="rsvpName" name="name" required>
+                    <input type="hidden" name="formType" value="rsvp-form">
+
+                    <label for="rsvpAttendance">Konfirmasi Kehadiran:</label>
+                    <select id="rsvpAttendance" name="attendance" required>
+                        <option value="">Pilih</option>
+                        <option value="will-attend">Insya Allah Hadir</option>
+                        <option value="will-not-attend">Mohon Maaf Tidak Bisa Hadir</option>
+                    </select>
+
+                    <label for="rsvpGuests">Jumlah Tamu (termasuk Anda):</label>
+                    <input type="number" id="rsvpGuests" name="guests" min="1" value="1">
+                    <button type="submit" class="submit-button">Kirim Konfirmasi</button>
+                    <p id="rsvpMessage" class="message"></p>
+                </form>
+            </section>
+
+            <section id="sectionWishes" class="main-section fade-in-up">
+                <h2 class="section-title">Berikan Doa & Ucapan</h2>
+                <p>Bagikan doa dan ucapan terbaik Anda untuk kedua mempelai.</p>
+                <form id="wishesForm" class="wishes-form">
+                    <label for="wisherName">Nama Anda:</label>
+                    <input type="text" id="wisherName" name="name" required>
+                    <input type="hidden" name="formType" value="wishes-form">
+
+                    <label for="wisherMessage">Pesan/Doa:</label>
+                    <textarea id="wisherMessage" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="submit-button">Kirim Ucapan (maks. 100 Kata)</button>
+                    <p id="wishesMessage" class="message"></p>
+                </form>
+
+                <div class="wishes-display-area">
+                    <button id="prevWishBtn" class="nav-button" aria-label="Previous Wish"><</button>
+                    <div id="currentWishContainer" class="current-wish-container">
+                        </div>
+                    <button id="nextWishBtn" class="nav-button" aria-label="Next Wish">></button>
+                </div>
+            </section>
+
+            <section id="sectionGift" class="main-section fade-in-up">
+                <h2 class="section-title">Kirim Hadiah</h2>
+                <p>Doa restu Anda adalah karunia terbaik. Namun, jika Anda berkehendak untuk memberikan tanda kasih, dapat disalurkan melalui:</p>
+
+                <div class="gift-options-container">
+                    <div class="gift-box fade-in-up">
+                        <img src="assets/icon/bni.png" alt="BNI Logo" class="bank-logo">
+                        <p class="bank-account-info">
+                            a.n: Nadia Tri Wulandari<br>
+                            No. Rek: 0123456789
+                        </p>
+                        <button onclick="copyToClipboard('0123456789', this)" class="copy-button">
+                            <i class="fas fa-copy"></i> Copy Rekening
+                        </button>
+                        <span class="copy-message">Disalin!</span>
+                    </div>
+
+                    <div class="gift-box fade-in-up">
+                        <img src="assets/icon/bri.png" alt="BRI Logo" class="bank-logo">
+                        <p class="bank-account-info">
+                            a.n: Nadia Tri Wulandari<br>
+                            No. Rek: 0123456789101112
+                        </p>
+                        <button onclick="copyToClipboard('0123456789101112', this)" class="copy-button">
+                            <i class="fas fa-copy"></i> Copy Rekening
+                        </button>
+                        <span class="copy-message">Disalin!</span>
+                    </div>
+
+                    <div class="gift-address-box fade-in-up">
+                        <h4>Atau Anda Juga Bisa Mengirim Kado Fisik Ke Alamat Berikut:</h4>
+                        <p class="address-info">
+                            Penerima: Nadia Tri Wulandari<br>
+                            Jl. Terong Kel. Mokoau Kec. Kambu,<br>
+                            (BTN Puri Tawang Alun II) Kota Kendari,
+                        </p>
+                        <button onclick="copyToClipboard('Jl. Terong Kel. Mokoau Kec. Kambu, Kec. BTN Puri Tawang Alun II Kota Kendari,', this)" class="copy-button">
+                            <i class="fas fa-copy"></i> Copy Alamat
+                        </button>
+                        <span class="copy-message">Disalin!</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sectionClosing" class="main-section fade-in-up">
+                <p>Merupakan kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu kepada kedua mempelai.</p>
+                <p class="greeting-text">Wassalamu’alaikum Warahmatullahi Wabarakatuh</p>
+            </section>
+
+            <section id="sectionQuranQuote" class="main-section fade-in-up">
+                <p class="quran-verse">
+                    Dan diantara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.
+                </p>
+                <p class="quran-reference">(Ar-Rum : 21)</p>
+            </section>
+
+            <section id="sectionMengundang" class="main-section fade-in-up">
+                <h2 class="section-title">Turut Mengundang Kedua Mempelai:</h2>
+                <div class="invitation-columns">
+                    <div class="invitation-list">
+                        <h3>Pihak Mempelai Wanita :</h3>
+                        <p>Drs. La Baande</p>
+                        <p>Drs. La Ndomas</p>
+                        <p>Ahmad Mustapa, S.Pd., M.Pd</p>
+                        <p>Abdul Kadir</p>
+                        <p>La Ode Ramlan, S.Pd., MN</p>
+                        <p>Alfiadin Arnol, S.Pd.</p>
+                    </div>
+
+                    <div class="invitation-list">
+                        <h3>Pihak Mempelai Pria :</h3>
+                        <p>Samir, S.IP., M.M</p>
+                        <p>H. Rauf, S.Ag., M.M</p>
+                        <p>Rahian T, S.H</p>
+                        <p>Tamrin, S.P., M.M</p>
+                        <p>La Tangkalalo, S.Pd., M.Pd</p>
+                        <p>Adenang</p>
+                        <p>Awaluddin</p>
+                        <p>Haerudin</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sectionThankYou" class="main-section fade-in-up">
+                <h1 class="section-title">Terima Kasih</h1>
+                <p class="thank-you-message">
+                    Dengan segala kerendahan hati, kami mengucapkan terima kasih yang sebesar-besarnya atas kehadiran dan doa restu Bapak/Ibu/Saudara/i. Semoga Allah SWT senantiasa melimpahkan rahmat dan berkah-Nya kepada kita semua.
+                </p>
+            </section>
+        </div>
+
+        <footer id="mainFooter">
+            <p>&copy; 2025 Undangan Pernikahan Nama & Nama. All Rights Reserved.</p>
+            <a href="https://greentetembatu.github.io/my-portofolio/">Dibuat oleh Mardani Dev. Jasa Pembuatan Web Murah Klik Disini untuk info Lebih Lanjut</a>
+        </footer>
+
+        <nav id="mainNavbar" class="navbar">
+            <ul class="navbar-nav">
+                <li><a href="#sectionOpening" class="nav-link"><i class="fas fa-home"></i> <span>Home</span></a></li>
+                <li><a href="#sectionEvents" class="nav-link"><i class="fas fa-calendar-alt"></i> <span>Acara</span></a></li>
+                <li><a href="#sectionGallery" class="nav-link"><i class="fas fa-images"></i> <span>Galeri</span></a></li>
+                <li><a href="#sectionGift" class="nav-link"><i class="fas fa-gift"></i> <span>Hadiah</span></a></li>
+                <li><a href="#sectionRsvp" class="nav-link"><i class="fas fa-check-circle"></i> <span>RSVP</span></a></li>
+                <li><a href="#sectionWishes" class="nav-link"><i class="fas fa-comments"></i> <span>Ucapan</span></a></li>
+            </ul>
+        </nav>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/fallingCanvas.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/parallax.js"></script>
+</body>
+</html>
