@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const scrollLeft = galleryWrapper.scrollLeft;
 
             galleryItems.forEach(item => {
-                const speed = parseFloat(item.dataset.parallaxSpeed) || 0.5; // Get speed from data-parallax-speed
+                const speed = parseFloat(item.dataset.parallaxSpeed) || 0.2; // Get speed from data-parallax-speed
                 const xPos = scrollLeft * speed;
                 item.style.transform = `translateX(${-xPos}px)`;
             });
